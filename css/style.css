@@ -498,6 +498,52 @@ html::-webkit-scrollbar-thumb {
   padding-top: 0.5rem;
 }
 
+.services {
+  background: var(--light-bg);
+}
+
+.services .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+
+.services .box-container .box {
+  text-align: center;
+  padding: 3rem;
+  background: var(--white);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  border: var(--border);
+}
+
+.services .box-container .box:hover img {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
+
+.services .box-container .box img {
+  height: 7rem;
+  margin-bottom: 0.5rem;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.services .box-container .box h3 {
+  font-size: 1.7rem;
+  color: var(--black);
+  text-transform: capitalize;
+  padding: 1rem 0;
+}
+
+.services .box-container .box p {
+  font-size: 1.4rem;
+  color: var(--light-color);
+  line-height: 2;
+}
+
 .footer {
   text-align: center;
   padding-bottom: 10rem;
